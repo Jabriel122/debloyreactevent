@@ -23,8 +23,11 @@ export const presencesEventResource = '/PresencasEvento';
  */
 export const commentaryEventResource = '/ComentariosEvento';
 
-export const detailsEventResource = '/'
+//Rotas para listar comentario com censura da AI
+export const detailsEventResource = '/ComentariosEvento/ListarSomenteExibe'
 
+//Rota para o recurso Eventos Anteriores
+export const previousEventResource = '/Evento/ListarAnteriores'
 /**
  * Rota para o recurso Próximos Eventos
  */
