@@ -33,7 +33,7 @@ const Nav = ({ exibeNavbar, setExibeNavbar }) => {
           Home
         </Link>
 
-        {userData.nome && userData.role === "Administrador" ? (
+        {userData.nome && userData.role === "Adm" ? (
           <>
             <Link className="navbar__item" to="/tipo-eventos">
               Tipos Evento
@@ -42,11 +42,9 @@ const Nav = ({ exibeNavbar, setExibeNavbar }) => {
               Eventos
             </Link>
           </>
-        ) : userData.nome && userData.role === "Comum" ? (
-          <Link className="navbar__item" to="/eventos-aluno">
-            Eventos
-          </Link>
-        ) : null}
+        ) : userData.nome && userData.role === "Aluno" || userData.nome && userData.role === "Comum" ? (
+          <Link className='navbar__item' to="/eventos-aluno">Eventos Aluno</Link>
+          ) : null}
 
         {/* <Link  className='navbar__item' to="/login">Login</Link> */}
         {/* <Link className="navbar__item" to="/testes">

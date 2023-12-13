@@ -205,7 +205,7 @@ const EventosAlunoPage = () => {
     }
   };
 
-  async function handleConnect(eventId, whatTheFunction, presencaId = null) {
+  async function handleConnect(idEvent, whatTheFunction, presencaId = null) {
     if (whatTheFunction === "connect") {
       try {
         //connect

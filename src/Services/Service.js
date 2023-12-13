@@ -23,6 +23,8 @@ export const presencesEventResource = '/PresencasEvento';
  */
 export const commentaryEventResource = '/ComentariosEvento';
 
+export const detailsEventResource = '/'
+
 /**
  * Rota para o recurso Próximos Eventos
  */
@@ -46,7 +48,7 @@ const externallApiUri = `https://eventwebapi-gabrielmarchetti.azurewebsites.net/
 // const externalApiUri = null;
 
 const api = axios.create({
-    baseURL: localApiUri
+    baseURL: externallApiUri
 });
 
 
